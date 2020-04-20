@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 还原上的使用问题，烦请钉钉联系@71016 程超 、@145744 李凯琪 帮助我们不断提升，不胜感激 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="375dp"
+     android:layout_height="317.5dp"
+     android:background="#f2f2f2"
+     android:orientation="vertical">
+
+    <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="15.5dp"
+         android:layout_marginTop="20dp"
+         android:ellipsize="end"
+         android:textSize="12dp"
+         android:textColor="#000000"
+         android:maxLines="1"
+         android:text="Hello, DSL plugin developer" />
+
+    <FrameLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="15.5dp"
+         android:layout_marginTop="13.5dp">
+
+        <ImageView 
+             android:layout_width="344.5dp"
+             android:layout_height="245dp"
+             android:layout_gravity="left|center"
+             android:src="https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/7cda522067f211e994a9eb8b5cb124bc.png" />
+
+        <LinearLayout 
+             android:layout_width="wrap_content"
+             android:layout_height="160.5dp"
+             android:layout_marginLeft="14dp"
+             android:layout_marginTop="14dp"
+             android:orientation="vertical">
+
+            <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ellipsize="end"
+                 android:textSize="11dp"
+                 android:textColor="#4D4D4D"
+                 android:maxLines="1"
+                 android:text="Get start" />
+
+            <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="9dp"
+                 android:ellipsize="end"
+                 android:textSize="11dp"
+                 android:textColor="#FFFFFF"
+                 android:maxLines="1"
+                 android:text="How to develop your own dsl plugin?" />
+
+            <ImageView 
+                 android:layout_width="110dp"
+                 android:layout_height="103.5dp"
+                 android:layout_marginLeft="103dp"
+                 android:layout_marginTop="18dp"
+                 android:src="https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/7d7cfac067f211e9ad07f5f0c555792f.png" />
+
+        </LinearLayout>
+
+        <FrameLayout 
+             android:layout_width="40dp"
+             android:layout_height="15dp"
+             android:layout_marginLeft="293.5dp"
+             android:layout_marginTop="219dp"
+             android:background="#eeeeee">
+
+            <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:ellipsize="end"
+                 android:textSize="8dp"
+                 android:textColor="#B38765"
+                 android:maxLines="1"
+                 android:text="Try" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

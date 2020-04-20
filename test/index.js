@@ -1,12 +1,14 @@
 const co = require('co');
-const xtpl = require('xtpl');
 const fs = require('fs');
-const thunkify = require('thunkify');
+const xtpl = require('xtpl');
 const path = require('path');
 const prettier = require('prettier');
 const { NodeVM } = require('vm2');
 const _ = require('lodash');
+const thunkify = require('thunkify');
+
 const data = require('./data');
+const originData = require('./originData');
 
 const vm = new NodeVM({
   console: 'inherit',
@@ -22,17 +24,9 @@ co(function*() {
   const renderInfo = vm.run(code)(data, {
     prettier: prettier,
     _: _,
-    responsive: {
-      width: 750,
-      viewportWidth: 375
-    },
-    utils: {
-      print: function(value) {
-        console.log(value);
-      }
-    }
+    rule: 'android',
+    originData: originData
   });
-
   if (renderInfo.noTemplate) {
     renderInfo.panelDisplay.forEach((file) => {
       fs.writeFileSync(path.join(__dirname, `../code/${file.panelName}`), file.panelValue);
