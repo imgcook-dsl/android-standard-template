@@ -1,5 +1,5 @@
 {
-  "name": "@imgcook/dsl-template",
+  "name": "@imgcook/android-standard-template",
   "devDependencies": {
     "@imgcook/dsl-helper": "^0.0.1-alpha.0",
     "co": "^4.6.0",
