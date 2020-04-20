@@ -118,10 +118,10 @@ function generateTargetDSL(layoutData, optionSettingData) {
                       常量定义
  ******************************************************/
 
-const ISSUE_LINK =
-  '<!-- 还原上的使用问题，烦请钉钉联系@71016 程超 、@145744 李凯琪 帮助我们不断提升，不胜感激 -->\n';
+// const ISSUE_LINK =
+//   '<!--  -->\n';
 
-const XML_HEADER = `<?xml version="1.0" encoding="utf-8"?>\n${ISSUE_LINK}`;
+const XML_HEADER = `<?xml version="1.0" encoding="utf-8"?>\n`;
 const DINAMIC_NAMESPACE =
   'xmlns:dinamic="http://schemas.android.com/apk/res-auto"';
 const ANDROID_NAMESPACE =
